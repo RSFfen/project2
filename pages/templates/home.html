@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Домашняя страница</h1>
+<center><img src="{% static 'images/HomeFood.jpg' %}" alt="Что поесть"></center>
+
+<table border="0" width="100%">
+	<tr>
+		<td width="10%"><a href="{% url 'zakyski' %}">Закуски</a></td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%"><a href="{% url 'zakyski' %}">Советы</a></td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">Кулинары</td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">Магазин</td>
+	</tr>
+	<tr>
+		<td width="10%">Свежие рецепты</td>
+		<td width="10%">Бульоны и супы</td>
+		<td width="10%">Горячие блюда</td>
+		<td width="10%">Салаты</td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">Выпечка</td>
+		<td width="10%">Десерты</td>
+		<td width="10%">Соусы</td>
+		<td width="10%">Летние рецепты</td>
+	</tr>
+</table>
+
+{% endblock content %}

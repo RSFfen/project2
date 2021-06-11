@@ -1,0 +1,26 @@
+{% load static %}
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Что поесть</title>
+ </head>
+   {% comment %}
+   <style>
+	body {
+		background: #FFF url('{% static "images/HomeFood.jpg" %}'); /* Фоновый цвет и фоновый рисунок*/
+		color: #000; /*Цвет текста на странице*/
+		background-attachment: fixed; /* Фон страницы фиксируется */
+		background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
+		background-size: 100%;
+	}
+   </style>
+   {% endcomment %}
+
+ <body>
+
+<header>
+  <a href="{% url 'home' %}">Домашняя страница</a> | <a href="{% url 'about' %}">О сайте</a>
+</header>
+
+{% block content %}
+{% endblock content %}
